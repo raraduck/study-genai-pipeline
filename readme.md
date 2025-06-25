@@ -10,3 +10,5 @@
 ### 4. install jupyter with vscode extension
 
 ### 5. vscode interpreter and terminal setting
+
+## Connecting OpenAI API
