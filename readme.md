@@ -206,3 +206,15 @@ Index(['addr1', 'addr2', 'zipcode', 'cat1', 'cat2', 'cat3', 'contentid',
 df1=df[['title', 'addr1', 'addr2', 'tel', 'mapx', 'mapy', 'eventstartdate', 'eventenddate']]
 df1
 ```
+
+
+### 5. crawling with beautifulsoup package
+```python
+import requests
+from bs4 import BeautifulSoup as bs
+
+html = requests.get('https://news.naver.com/section/102')
+# html.text
+soup = bs(html.text, 'html.parser')
+print(soup)
+```
